@@ -15,12 +15,16 @@
 .left{
     float: left;
 }
-body, html{
-    height: 132%;
+body{
+    /*height: 100%;*/
+    font-family: 'Lato', sans-serif;
 }
+/*
 .hero-image{
+    display: table;
+    width: 100%;
     background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../img/cover.jpg");
-    height: 100%;
+    height: 105%;
     background-position: top center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -41,17 +45,15 @@ body, html{
 .hero-text h1{
     margin: 50px 0;
 }
-/*
+*/
 header{
     display: table;
     background-size: cover;
     background-image: url('../img/cover.jpg');
-    border: 1px solid black;
-    height: 55vw;
+    height: 105vh;
     width: 100%;
     position: relative;
-    padding: 120px 0;
-    font-size: 1.75vw;
+    padding: 150px 0;
 }
 header:after{
     content: '';
@@ -63,17 +65,21 @@ header:after{
     left: 0;
 }
 .header-wrapper{
+    display: table-cell;
     width: 100%;
-    line-height: 3;
     text-align: center;
-    font-family: 'Lato', sans-serif;
     color: white;
-    position: absolute;
+    position: relative;
     z-index: 1;
+    font-size: 23px;
+    vertical-align: middle;
+    padding: 0 10px;
 }
-*/
+.header-wrapper h1{
+    margin: 50px 0;
+}
 .get-start-btn{
-    padding: 15px;
+    padding: 12px;
     background-color: dodgerblue;
     color: white;
     border-radius: 20px;
@@ -86,8 +92,11 @@ header:after{
 .main-menu{
     display: block;
     width: 100%;
-    background-color: rgb(0,150,250);
-    height: 54px;
+    /*background-color: rgb(0,150,250);*/
+    background-color: rgb(75, 153, 255);
+    /*height: 54px;*/
+    height: 64px;
+    padding: 5px 0;
     overflow: hidden;
 }
 .main-menu li{
@@ -107,12 +116,12 @@ header:after{
     margin-left: 15px;
 }
 .nav-links a{
-    font-size: 18px;
+    font-size: 16px;
     padding: 10px;
     display: block;
 }
 .nav-social-media a{
-    font-size: 30px;
+    font-size: 25px;
     padding: 10px;
     display: block;
 }
@@ -179,18 +188,27 @@ footer{
     height: 200px;
     background-color: gray;
 }
+/*
 @media only screen and (min-height:500px){
     body{
         height: 100%;
     }
 }
+*/
+/*
+@media only screen and (min-height:208px){
+    .main-menu{
+        position: fixed;
+        top: 0;
+    }
+}
+*/
 @media only screen and (max-width:1120px){
     .main-menu-wrapper{
         width: 95%;
     }
 }
-
-@media only screen and (max-width:740px){
+@media only screen and (max-width: 804px){
     .main-menu-wrapper{
         width: 80%;
     }
@@ -199,4 +217,14 @@ footer{
         position: absolute;
         left: 85%;
     }
+}
+@media only screen and (max-width:740px){
+    .main-menu-wrapper{
+        width: 80%;
+    }/*
+    .menu-responsive-btn{
+        display: block;
+        position: absolute;
+        left: 85%;
+    }*/
 }
