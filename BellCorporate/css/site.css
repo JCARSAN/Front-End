@@ -97,7 +97,7 @@ header:after{
     /*height: 54px;*/
     height: 64px;
     padding: 5px 0;
-    overflow: hidden;
+    /*overflow: hidden;*/
 }
 .main-menu li{
     display: inline-block;
@@ -116,7 +116,8 @@ header:after{
     margin-left: 15px;
 }
 .nav-links a{
-    font-size: 16px;
+    /*font-size: 16px;*/
+    font-size: 20px;
     padding: 10px;
     display: block;
 }
@@ -124,6 +125,36 @@ header:after{
     font-size: 25px;
     padding: 10px;
     display: block;
+}
+.menu-dropdown{
+    position: absolute;
+    background-color: rgb(235,235,235);
+    display: none;
+    width: 200px;
+}
+.deep{
+    left: 200px;
+    display: none;
+    position: absolute;
+    background-color: rgb(235,235,235);
+    width: 200px;
+    top: 55px;
+}
+.dropdown-btn:hover .menu-dropdown{
+    display: block;
+}
+.dropdown-deep-btn:hover .deep{
+    display: block;
+}
+.menu-dropdown li{
+    display: block;
+    padding: 5px;
+}
+.menu-dropdown li:hover{
+    background-color: rgba(250,250,255,0.5);
+}
+.menu-dropdown a{
+    color: black;
 }
 .menu-responsive-btn{
     font-size: 30px;
@@ -203,9 +234,9 @@ footer{
     }
 }
 */
-@media only screen and (max-width:1120px){
+@media only screen and (max-width:1200px){
     .main-menu-wrapper{
-        width: 95%;
+        width: 98%;
     }
 }
 @media only screen and (max-width: 804px){
@@ -216,6 +247,9 @@ footer{
         display: block;
         position: absolute;
         left: 85%;
+    }
+    .nav-links, .nav-social-media{
+        display: none;
     }
 }
 @media only screen and (max-width:740px){
