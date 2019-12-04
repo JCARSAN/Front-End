@@ -12,7 +12,7 @@
 <body>
     <header class="hero-image" id="home">
         <div class="header-wrapper hero-text">
-            <figure><img src="img/logo.png" alt="Company Logo"></figure> 
+            <figure><img src="img/logo.png" alt="Bell Company Logo"></figure> 
             <h1>All theme with personality</h1> 
             <h3>This is a powerful theme with some great features that you can use in your future projects.</h3>  
             <a href="#" class="get-start-btn">Get Started Now</a>
@@ -47,7 +47,8 @@
                 </li>
                 <li><a href="#contactus">Contact Us</a></li>
             </ul> 
-            <a href="#" class="menu-responsive-btn"><i class="fa fa-bars"></i></a> 
+            <!--<a href="#" class="menu-responsive-btn" id="menu-responsive-btn"><i class="fa fa-bars"></i></a> -->
+            <span class="menu-responsive-btn" id="menu-responsive-btn"><i class="fa fa-bars"></i></span>
             <ul class="nav-social-media right">
                 <li><a href=""><i class="fa fa-twitter"></i></a></li>
                 <li><a href=""><i class="fa fa-facebook"></i></a></li>
@@ -55,6 +56,35 @@
                 <li><a href=""><i class="fa fa-envelope"></i></a></li>
             </ul>
         </div>  
+    </nav>
+    <nav class="menu-overlay" id="menu-overlay">
+        <ul class="menu-overlay-content" id="menu-overlay-content">
+            <li><span class="btn-exit" id="btn-exit">X</span></li>
+            <li style="padding-top: 50px;"><a href="#aboutus">About Us</a></li>
+            <li><a href="#features">Features</a></li>
+            <li><a href="#portfolio">Portfolio</a></li>
+            <li><a href="#team">Team</a></li>
+            <li class="">
+                <a href="#">Dropdown <i class="fa fa-angle-down"></i></a>
+                <ul class="menu-dropdown">
+                    <li><a href="">Link 1</a></li>
+                    <li class="">
+                        <a href="">Link 2 <i class="fa fa-angle-right right"></i></a>
+                        <ul class="deep">
+                            <li><a href="">Link</a></li>
+                            <li><a href="">Link</a></li>
+                            <li><a href="">Link</a></li>
+                            <li><a href="">Link</a></li>
+                            <li><a href="">Link</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="">Link 3</a></li>
+                    <li><a href="">Link 4</a></li>
+                    <li><a href="">Link 5</a></li>    
+                </ul>
+            </li>
+            <li><a href="#contactus">Contact Us</a></li>
+        </ul>        
     </nav>
     <main>
         <section class="aboutus" id="aboutus">
