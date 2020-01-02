@@ -70,6 +70,9 @@ header:after{
     height: 64px;
     padding: 5px 0;
     /*overflow: hidden;*/
+    z-index: 1;
+    position: sticky;
+    top: 0;
 }
 .main-menu li{
     display: inline-block;
@@ -85,6 +88,9 @@ header:after{
     font-size: 20px;
     padding: 10px;
     display: block;
+}
+.main-menu a:hover{
+    color: rgba(255, 255, 255, 0.5);
 }
 .nav-social-media a{
     font-size: 25px;
@@ -148,7 +154,7 @@ header:after{
     position: relative;
     height: 100%;
     background-color: rgba(0,0,0,0.75);
-    transition: 2s;
+    transition: 0.5s;
     overflow: hidden;
 }
 .menu-overlay-content a{
@@ -175,42 +181,182 @@ header:after{
 }
 main{
     width: 100%;
-    border: 1px solid black;
     height: 1500px;
     display: table;
 }
 .aboutus{
     width: 80%;
     margin: auto;
-    height: 300px;
-    border: 1px solid black;
+    text-align: center;
+}
+.aboutus h1{
+    margin: 30px 0;
+}
+.circle-wrapper{
+    /*width: 60%;*/
+    margin: auto;
+    display: table;
+    padding: 50px 0%;
+    
+}
+.row-wrapper{
+    width: 50%;
+    display: inline-block;
+}
+.circle{
+    border: 5px solid rgb(75, 153, 255);;
+    height: 150px;
+    width: 150px;
+    /*display: inline-block;*/
+    border-radius: 50%;
+    position: relative;
+    padding-top: 50px;
+    margin-bottom: 15px;
+    margin-right: 10px;
+}
+.circ-sup{
+    height: 50px;
+    width: 50px;
+    position: absolute;
+    top: 0;
+    right: 0;
+    border-radius: 50%;
+    background-color: orangered;
+    color: rgb(235,235,235);
+    line-height: 50px;
+    font-weight: bolder;
 }
 .banner{
     width: 100%;
-    height: 500px;
-    background-color: steelblue;
+    max-height: 500px;
+    background-image: url('../img/parallax-bg.jpg');
+    background-position: 0px 0px;
+    overflow: hidden;
+}
+.banner hgroup{
+    margin-top: 30px;
+}
+.banner h1,h4{
+    text-align: center;
+    color: seashell;
+}
+.banner h1{
+    text-transform: uppercase;
+    font-size: 25px;
+}
+.banner h4{
+    font-size: 18px;
+}
+.banner hgroup{
+    margin-top: 50px;
+    line-height: 2;
+}
+.gadgets-img{
+    width: fit-content;
+    margin: auto;
+    padding-top: 35px;
+    z-index: 0;
+}
+.gadgets-img img{
+    width: 100%;
+    height: auto;
 }
 .features{
     width: 80%;
     margin: auto;
-    height: 500px;
-    border: 1px solid black;
+}
+.features h1{
+    text-align: center;
+    color: rgb(15, 153, 255);
+    margin-top: 30px;
+    font-size: 30px;
+}
+.features-wrapper{
+    display: table;
+    /*margin: auto;*/
+    width: 100%;
+    margin: 30px 0;
+}
+.feature{
+    display: inline-block;
+    width: 33.333337%;
+    text-align: center;
+    padding: 0 15px;
+}
+.feature span{
+    padding: 15px;
+    padding: 15px;
+    color: white;
+    font-size: 25px;
+    background-color: rgb(15, 153, 255);
+    border-radius: 50%;
+    margin: 10px;
+    text-align: center;
 }
 .buy-theme{
-    height: 150px;
+    height: 175px;
     background-color: rgb(0,150,250);
     width: 100%;
+    color: white;
+}
+.buy-theme-wrapper{
+    /*margin-left: 150px;*/
+    width: 100%;
+    height: 68px;
+    margin-top: 53px;
+}
+.buy-theme-text-wrapper{
+    margin-left: 150px;
+}
+.buy-theme a{
+    color: white;
+    padding: 15px;
+    border: 2px solid white;
+    display: block;
+    width: fit-content;
+    margin-top: 15px;
+    border-radius: 25px;
+    float: right;
+    margin-right: 150px;
 }
 .portfolio{
     width: 100%;
-    height: 500px;
-    border: 1px solid black;
+    text-align: center;
+}
+.portfolio h1{
+    color: rgb(15, 153, 255);
+    margin: 30px 0;
+}
+.portfolio figure{
+    width: 25%;
+    float: left;
+    position: relative;
+}
+.portfolio img{
+    width: 100%;
+    height: auto;
+}
+.portfolio figcaption{
+    position: absolute;
+    z-index: -1;
+    top: 0;
+    height: 100%;
+    background-color: rgba(0,0,0,0.5);  
+    color: whitesmoke;
+}
+.portfolio figure:hover figcaption{
+    z-index: 0;
+}
+.portfolio figcaption h3{
+    margin-top: 10%;
 }
 .ourteam{
     width: 80%;
     margin: auto;
     height: 400px;
     background-color: tomato;
+    content: "";
+    clear: both;
 }
 .contactus{
     width: 80%;
@@ -261,6 +407,11 @@ footer{
         display: none;
     }
 }
+@media only screen and (max-width:815px){
+    .aboutus{
+        width: 100%;
+    }
+}
 @media only screen and (max-width:740px){
     .main-menu-wrapper{
         width: 80%;
@@ -270,4 +421,24 @@ footer{
         position: absolute;
         left: 85%;
     }*/
+}
+@media only screen and (max-width:600px){
+    .feature{
+        width: 100%;
+    }
+}
+@media only screen and (max-width:630px){
+    .features{
+        width: 100%;
+    }
+}
+@media only screen and (max-width: 654px){
+    .circle-wrapper{
+        width: 60%;
+    }
+}
+@media only screen and (max-width: 548px){
+    .circle-wrapper{
+        width: 10%;
+    }
 }
