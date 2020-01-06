@@ -337,12 +337,14 @@ main{
     height: auto;
 }
 .portfolio figcaption{
+    width: 100%;
     position: absolute;
     z-index: -1;
     top: 0;
-    height: 100%;
+    height: 99%;
     background-color: rgba(0,0,0,0.5);  
     color: whitesmoke;
+    padding: 10px;
 }
 .portfolio figure:hover figcaption{
     z-index: 0;
@@ -353,16 +355,79 @@ main{
 .ourteam{
     width: 80%;
     margin: auto;
-    height: 400px;
-    background-color: tomato;
     content: "";
     clear: both;
+}
+.ourteam h1{
+    color: rgb(15, 153, 255);
+    text-align: center;
+    margin: 30px 0;
+} 
+.ourteam figure{
+    width: 25%;
+    float: left;
+    position: relative;
+}
+.career-position{
+    color: rgb(190,190,190);
+    text-align: left;
+}
+.ourteam img{
+    width: 100%;
+    height: auto;
+}
+.ourteam figcaption{
+    padding: 30px;
+    position: relative;
+    left: 0;
+    width: 100%;
+    margin-top: -3px;
+    margin-bottom: 10px;
+}
+.ourteam div{
+    position: absolute;
+    width: 100%;
+    /*height: 99%;*/
+    height: 16.7vw;;
+    top: 0;
+    left: 0;
+    display: none;
+    text-align: center;
+    padding: 15px;
+    padding-top: 2.5vw;
+    color: whitesmoke;
+    font-size: 1.3vw;
+}
+.ourteam figure:hover figcaption {
+    background-color: rgb(15, 153, 255);
+    color: whitesmoke;
+}
+.ourteam figure:hover .career-position{
+    color:whitesmoke;
+}
+.ourteam figure:hover div{
+    background-color: rgba(0,0,0,0.5);
+    display: block;
+}
+.conect-with-me li{
+    float: left;
+}
+.conect-with-me a{
+    color: whitesmoke;
+    /*font-size: 1.5vw;*/
+    padding: 8px;
+}
+.ourteam p{
+    margin-top: 35px;
 }
 .contactus{
     width: 80%;
     height: 600px;
     border: 1px solid black;
     margin: auto;
+    content: "";
+    clear: both;
+    margin-top: 60px;
 }
 footer{
     width: 100%;
@@ -384,9 +449,37 @@ footer{
     }
 }
 */
+@media only screen and (max-width:1230px){
+    .buy-theme a{
+        margin-right: 10px;
+    }
+}
 @media only screen and (max-width:1200px){
     .main-menu-wrapper{
         width: 98%;
+    }
+}
+@media only screen and (max-width:1092px){
+    .buy-theme-text-wrapper{
+        margin-left: 50px;
+    }
+}
+@media only screen and (max-width:990px){
+    .portfolio figure{
+        width: 50%;
+    }
+}
+@media only screen and (max-width:980px){
+    .buy-theme-wrapper{
+        height: 200px;
+    }
+    .buy-theme a{
+        margin-right: 40%;
+    }
+}
+@media only screen and (max-width:977px){
+    .nav-social-media{
+        display: none;
     }
 }
 @media only screen and (max-width: 804px){
@@ -412,6 +505,15 @@ footer{
         width: 100%;
     }
 }
+@media only screen and (max-width:845px){
+    .ourteam figure{
+        width: 100%;
+    }
+    .ourteam div{
+        height: 65.6vw;
+        font-size: 3vw;
+    }
+}
 @media only screen and (max-width:740px){
     .main-menu-wrapper{
         width: 80%;
@@ -435,6 +537,11 @@ footer{
 @media only screen and (max-width: 654px){
     .circle-wrapper{
         width: 60%;
+    }
+}
+@media only screen and (max-width:575px){
+    .portfolio figure{
+        width: 100%;
     }
 }
 @media only screen and (max-width: 548px){
