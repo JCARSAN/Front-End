@@ -70,7 +70,7 @@ header:after{
     height: 64px;
     padding: 5px 0;
     /*overflow: hidden;*/
-    z-index: 1;
+    z-index: 10;
     position: sticky;
     top: 0;
 }
@@ -306,18 +306,23 @@ main{
     margin-top: 53px;
 }
 .buy-theme-text-wrapper{
-    margin-left: 150px;
+    margin-left: 9%;
+    width: 55%;
 }
 .buy-theme a{
     color: white;
-    padding: 15px;
-    border: 2px solid white;
-    display: block;
-    width: fit-content;
-    margin-top: 15px;
+}
+.buy-this-theme-btn{
+    width: 19%;
+    text-align: center;
     border-radius: 25px;
-    float: right;
-    margin-right: 150px;
+    border: 2px solid white;
+    margin-right: 11%;
+    margin-top: 10px;
+}
+.buy-this-theme-btn a{
+    padding: 20px;
+    display: block;
 }
 .portfolio{
     width: 100%;
@@ -383,12 +388,13 @@ main{
     width: 100%;
     margin-top: -3px;
     margin-bottom: 10px;
+    z-index:9;
 }
 .ourteam div{
     position: absolute;
     width: 100%;
-    /*height: 99%;*/
-    height: 16.7vw;;
+    height: 90%;
+    /*height: 16.7vw;*/
     top: 0;
     left: 0;
     display: none;
@@ -421,36 +427,78 @@ main{
     margin-top: 35px;
 }
 .contactus{
-    width: 80%;
-    height: 600px;
-    border: 1px solid black;
-    margin: auto;
+    width: 100%;
+    background-color: #F7F7F7;
     content: "";
     clear: both;
     margin-top: 60px;
 }
+.contact_us_container{    
+    width: 733px;
+}
+.contactus h1{
+    color: #01A3B9;
+    text-align: center;
+    padding-top: 95px;
+    padding-bottom: 72px;
+    font-size: 30px;
+}
+.contactus-info{
+    /*width: 45%;*/
+    width: 288px;
+}
+.contactus-info i.icon{
+    color:#00A3B9;
+    font-size: 30px;  
+    float: left;
+}
+.contactus-info span.text{
+    font-size: 16px;
+    vertical-align: top;
+}
+.contactus form{
+    /*width: 55%;*/
+    width: 445px;
+}
+.contactus textarea{
+    width: 100%;
+    margin-bottom: 18px;
+    font-size: 16px;
+}
+.contactus input{
+    width: 100%;
+    height: 38px;
+    margin-bottom: 18px;
+    font-size: 16px;
+}
+.contactus input[type=submit]{
+    height: 45px;
+    width: 151px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: #00A3B9;
+    border:0;
+    color: white;
+}
+/*
+.contactus input{
+    height: 35px;
+    width: 497px;
+    min-width: 300px;
+    margin-bottom: 10px;
+}
+.contactus textarea{
+    margin-bottom: 10px;
+}
+*/
 footer{
     width: 100%;
     height: 200px;
     background-color: gray;
 }
-/*
-@media only screen and (min-height:500px){
-    body{
-        height: 100%;
-    }
-}
-*/
-/*
-@media only screen and (min-height:208px){
-    .main-menu{
-        position: fixed;
-        top: 0;
-    }
-}
-*/
-@media only screen and (max-width:1230px){
-    .buy-theme a{
+@media only screen and (max-width:1220px){
+    .buy-this-theme-btn{
         margin-right: 10px;
     }
 }
@@ -469,14 +517,6 @@ footer{
         width: 50%;
     }
 }
-@media only screen and (max-width:980px){
-    .buy-theme-wrapper{
-        height: 200px;
-    }
-    .buy-theme a{
-        margin-right: 40%;
-    }
-}
 @media only screen and (max-width:977px){
     .nav-social-media{
         display: none;
@@ -489,8 +529,8 @@ footer{
     .menu-responsive-btn{
         display: block;
         position: fixed;
-        /*left: 85%;*/
-        left: 90%;
+        left: 85%;
+        /*left: 90%;*/
         top: 0;
         z-index: 1;
         color: seashell;
@@ -505,13 +545,40 @@ footer{
         width: 100%;
     }
 }
+@media only screen and (max-width:832px){
+    .buy-theme-text-wrapper{
+        float: none;
+        width: calc(100% - 50px);
+        padding-right: 50px;
+    }
+    .buy-this-theme-btn{
+        float: none;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 30px;
+        width: 40%;
+    }
+}
 @media only screen and (max-width:845px){
     .ourteam figure{
         width: 100%;
     }
     .ourteam div{
-        height: 65.6vw;
+        /*height: 65.6vw;*/
+        height: 90%;
         font-size: 3vw;
+    }
+}
+@media only screen and (max-width:747px){
+    .contact_us_container{
+        width: 100%;
+    }
+    .contactus-info, .contactus form{
+        float: none;
+        margin: auto;
+    }
+    .contactus form{
+        margin-top: 25px;
     }
 }
 @media only screen and (max-width:740px){
@@ -547,5 +614,10 @@ footer{
 @media only screen and (max-width: 548px){
     .circle-wrapper{
         width: 10%;
+    }
+}
+@media only screen and (max-width: 446px){
+    .contactus form{
+        width: auto;
     }
 }
